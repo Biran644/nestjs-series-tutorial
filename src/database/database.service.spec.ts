@@ -15,4 +15,15 @@ describe('DatabaseService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should extend PrismaClient', () => {
+    expect(service).toHaveProperty('employee');
+    expect(service).toHaveProperty('$connect');
+    expect(service).toHaveProperty('$disconnect');
+  });
+
+  it('should have onModuleInit method', () => {
+    expect(service.onModuleInit).toBeDefined();
+    expect(typeof service.onModuleInit).toBe('function');
+  });
 });

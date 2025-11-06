@@ -23,12 +23,35 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+**NestJS Beginner Tutorial - REST API with Prisma & PostgreSQL**
+
+Complete NestJS application following a 3-hour beginner tutorial. Features REST API endpoints, database integration with Prisma ORM, custom logging, rate limiting, and validation.
+
+## What's Built
+
+- 🚀 **NestJS REST API** - CRUD operations for users and employees
+- 🗄️ **Database Integration** - Prisma ORM with PostgreSQL (Neon)
+- 📝 **Custom Logger** - File-based logging service
+- 🛡️ **Validation & Throttling** - Input validation and rate limiting
+- 🔧 **TypeScript** - Fully typed application
 
 ## Project setup
 
 ```bash
 $ npm install
+```
+
+## Database setup
+
+```bash
+# Run Prisma migrations
+$ npx prisma migrate dev --name init
+
+# Generate Prisma client
+$ npx prisma generate
+
+# Open Prisma Studio (optional)
+$ npx prisma studio
 ```
 
 ## Compile and run the project
